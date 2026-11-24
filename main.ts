@@ -6,8 +6,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 const RANT =
   "My office printer has warned me it is \"low on toner\" since March. " +
   "It has printed four hundred pages since. It is not low on toner. " +
-  "It is a liar. And it only ever jams when the deadline is in five minutes, " +
-  "like it checked my calendar first, then chose violence.";
+  "It is a liar. And it only ever jams when the deadline is five minutes away, " +
+  "like it read my calendar, waited, then chose violence.";
 
 await mkdir("/output", { recursive: true });
 await writeFile("/output/entry.txt", RANT, "utf8");
